@@ -17,14 +17,12 @@ jobs:
       with:
         channel: 'stable' # or: 'beta', 'dev' or 'master'
     - run: flutter pub get
-    
-    - name: Build Android
+    #Android
     - run: |
           cd example
           flutter pub get
           flutter build apk
-          
-    - name: Build iOS
+    #IOS
     - run: |
           flutter build ios --release --no-codesign
     
