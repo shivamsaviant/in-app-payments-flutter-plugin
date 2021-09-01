@@ -24,5 +24,7 @@ jobs:
           flutter build apk
     #IOS
     - run: |
+          cd example
+          flutter pub get
           flutter build ios --release --no-codesign
     
