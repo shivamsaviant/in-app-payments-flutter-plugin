@@ -1,4 +1,4 @@
-name: InAppPaymentCI
+name: build
 
 on:
   push:
