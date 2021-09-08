@@ -12,7 +12,7 @@ jobs:
     - run: 'echo "$EMAIL_USERNAME" > key'
       shell: bash
       env:
-        SSH_KEY: ${{secrets.EMAIL_USERNAME}}
+        EMAIL_USERNAME: ${{secrets.EMAIL_USERNAME}}
     - uses: actions/checkout@v2
     - uses: actions/setup-java@v1
       with:
